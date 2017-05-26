@@ -79,6 +79,7 @@ end
 def test_getting_food
   result = get_food(@person2, "soup")
   assert_equal(true, result)
+  # zsolt added example: assert_equal(false, result)
 end
 
   # 3. Allow a new friend to be added to a given person
@@ -94,9 +95,9 @@ def test_remove_friend
 end
 
   # 5. Find the total of everyone's money
-def test_money
-  total_money(@people)
-  assert_equal("143", total_money)
+def test_total_funds
+  total_funds(@people)
+  assert_equal(143, total_funds)
 end
   # 6. For two given people, allow the first person to loan a given value of money to the other
 
