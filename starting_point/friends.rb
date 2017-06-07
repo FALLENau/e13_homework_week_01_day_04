@@ -8,6 +8,7 @@ end
 
 def get_food(person, food)
   return person[:favourites][:things_to_eat].include?(food)
+  # Zsolt Example: Loops----
 end
 
 def add_friend(person, friend)
@@ -18,7 +19,21 @@ def remove_friend(person, friend)
   person[:friends].delete_at(0)
 end
 
-def total_money(people)
-  puts person[:monies]
-
+def total_funds(people)
+  total = 0
+  for person in people
+      total += person[:monies]
+  end
+  return total
 end
+#
+# def lend_money()
+#   giver[:monies] -= value
+#   reciver[:monies] += value
+# end
+#
+# def all_foods(people)
+#   foods = []
+#   for person in people
+#     result << person if people
+# end
